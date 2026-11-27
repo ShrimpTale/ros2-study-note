@@ -6,8 +6,13 @@ class Download:
     def download(self,url,callback_world_count):
         print(f'任务线程：{threading.get_ident()}，开始下载：{url}')
         #                          获取线程编号
-        response =requests.get(url)#get方法取得url，下载本体
-        response.encoding='utf-8'#utf-8是字符串里的内容
+        #格式化字符串，字符串{}中的内容会被当成表达式计算
+
+        response =requests.get(url)
+        #get方法取得url，下载本体
+        response.encoding='utf-8'
+        #utf-8是字符串里的内容
+        
         callback_world_count(url,response.text)#调用回调函数
     #                                  ↑
         #requests.get() 返回的是一个 Response 对象(response变量)，而 Response 类内部定义了 text 这个属性
