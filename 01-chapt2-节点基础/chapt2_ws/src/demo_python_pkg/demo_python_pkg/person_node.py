@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 #添加rclpy的node,让person_node成为Node的子类
-#注意是rclpy.node ,不要少.node
+#注意是rclpy的node
 
 #定义类:类里有属性方法，可以根据类中的属性方法创建对象，对象属于这个类
 #class 类的名字:
