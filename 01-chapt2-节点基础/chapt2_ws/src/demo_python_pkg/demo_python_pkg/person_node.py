@@ -6,6 +6,8 @@ from rclpy.node import Node
 #定义类:类里有属性方法，可以根据类中的属性方法创建对象，对象属于这个类
 #class 类的名字:
 class PersonNode(Node):
+#                 ↑
+#             继承自父类Node
 #        init:创建属性后初始化
 #    函数里创建了新东西，就要用__init__
     def __init__(self,node_name:str,name_value:str,age_value:int) -> None:
