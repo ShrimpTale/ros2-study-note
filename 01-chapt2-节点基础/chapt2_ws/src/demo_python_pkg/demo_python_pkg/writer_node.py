@@ -1,4 +1,5 @@
 from person_node import PersonNode
+#此物是Node的子类 
 import rclpy
 # 这一行 from rclpy.node import Node 删掉，你父类已经继承了，子类不需要再导
 
