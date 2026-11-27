@@ -18,8 +18,7 @@ class PersonNode(Node):
 
         self.name=name_value
         self.age=age_value
-        #创建方法(在类里的函数)
-        #在函数外不能这么操作
+        #创建方法(在类里的函数)，只能在函数里这么干
     
 
     def eat(self,food_name:str):
